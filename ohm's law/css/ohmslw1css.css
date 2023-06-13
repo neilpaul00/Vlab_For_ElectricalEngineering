@@ -1,0 +1,95 @@
+.canvasjs-chart-credit {
+	display: none;
+}
+.dropdown-content {
+	
+	position: absolute;
+	background-color: #f9f9f9;
+	border: 2px solid #3385ff;
+	box-shadow: 0px 8px 16px 0px rgba(245, 235, 235, 0.2);
+	padding: 1rem;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+img[id^='info_'] {
+	border: none;
+	padding: 5px;
+	float: right;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+}
+
+table {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table tr:hover td {
+	background: #ccebff;
+}
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+table tr:last-child td:last-child {
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+/* .tooltip {
+                 position: relative;
+                display: inline-block;
+              
+             }*/
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 80px;
+	background-color: white; /*#ffff80;#555;*/
+	border: 2px solid #3385ff;
+
+	color: #555; /*#fff;*/
+	text-align: center;
+
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	top: 60%;
+	left: 90%;
+	margin-left: 20px;
+
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+/* Tooltip arrow 
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 300px;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }*/
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 3;
+}
